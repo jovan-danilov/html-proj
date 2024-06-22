@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store - Kleidung</title>
+    <link rel="stylesheet" href="styles/category.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">ONLINE-SHOP</a>
+            <div class="search-container">
+                <button id="searchButton">
+                    <img src="https://w7.pngwing.com/pngs/603/893/png-transparent-peco-pallet-computer-icons-magnifying-glass-magnifying-glass-magnifier-%D1%81%D1%82%D0%B5%D0%BA%D0%BB%D0%BE-vektor.png" alt="Search">
+                </button>
+                <input type="text" id="searchInput" placeholder="Enter product name...">
+            </div>
+            <button id="showAllButton">Alle zeigen</button>
+            <a href="cart.html" id="cartButton">Warenkorb (<span id="cartCount">0</span>)</a>
+        </div>
+    </header>
+
+    <div class="category-container">
+        <button class="categoryButton" data-category="Adidas">Adidas</button>
+        <button class="categoryButton" data-category="Nike">Nike</button>
+        <button class="categoryButton" data-category="Puma">Puma</button>
+        <button class="categoryButton" data-category="Google">Google</button>
+    </div>
+
+    <main id="productCards">
+        <div class="productCard" data-id="B1" data-name="Nike Air Zoom Pegasus 39" data-tags="Nike" data-price="130"
+            data-image="https://i.sportisimo.com/products/images/1578/1578794/700x700/nike-air-zoom-pegasus-39_5.jpg" onclick="redirectToProductPage('productB1')">
+            <img src="https://i.sportisimo.com/products/images/1578/1578794/700x700/nike-air-zoom-pegasus-39_5.jpg" alt="Product 1">
+            <h3>Nike Air Zoom Pegasus 39</h3>
+            <p>Leichte Laufschuhe mit ausgezeichneter Dämpfung und Unterstützung.</p>
+            <div class="tags">
+                <span class="tag">Nike</span>
+            </div>
+            <p class="price">130$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="B2" data-name="Adidas Ultraboost 21" data-tags="Adidas" data-price="180"
+            data-image="https://www.a3sport.cz/files/images/slike_proizvoda/media/S23/S23840/images/S23840_2.jpg" onclick="redirectToProductPage('productB2')">
+            <img src="https://www.a3sport.cz/files/images/slike_proizvoda/media/S23/S23840/images/S23840_2.jpg" alt="Product 2">
+            <h3>Adidas Ultraboost 21</h3>
+            <p>Hochmoderne Laufschuhe mit energierückführender Boost-Dämpfung für maximalen Komfort und Leistung.</p>
+            <div class="tags">
+                <span class="tag">Adidas</span>
+            </div>
+            <p class="price">180$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="B3" data-name="Puma RS-X³" data-tags="Puma" data-price="110"
+            data-image="https://static.ftshp.digital/img/p/5/0/8/0/8/1/508081-full_product.jpg" onclick="redirectToProductPage('productB3')">
+            <img src="https://static.ftshp.digital/img/p/5/0/8/0/8/1/508081-full_product.jpg" alt="Product 3">
+            <h3>Puma RS-X³</h3>
+            <p>Stylische Sneaker mit retro-inspiriertem Design und bequemer Dämpfung für den Alltag und sportliche Aktivitäten.</p>
+            <div class="tags">
+                <span class="tag">Puma</span>
+            </div>
+            <p class="price">110$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="B4" data-name="Adidas NMD_R1" data-tags="Adidas" data-price="150"
+            data-image="https://static.ftshp.digital/img/p/5/4/5/3/6/8/545368-full_product.jpg" onclick="redirectToProductPage('productB4')">
+            <img src="https://static.ftshp.digital/img/p/5/4/5/3/6/8/545368-full_product.jpg" alt="Product 4">
+            <h3>Adidas NMD_R1</h3>
+            <p>Trendige Sneaker mit innovativer Boost-Technologie und flexibler Passform für urbanen Lifestyle.</p>
+            <div class="tags">
+                <span class="tag">Adidas</span>
+            </div>
+            <p class="price">150$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="B5" data-name="Nike Sportswear Tech Fleece Jogger" data-tags="Nike" data-price="90"
+            data-image="https://www.sportsdirect.com/images/products/48004318_l.jpg" onclick="redirectToProductPage('productB5')">
+            <img src="https://www.sportsdirect.com/images/products/48004318_l.jpg" alt="Product 5">
+            <h3>Nike Sportswear Tech Fleece Jogger</h3>
+            <p>Leichte und warme Jogginghose aus Tech-Fleece-Material für optimalen Komfort bei jeder Aktivität.</p>
+            <div class="tags">
+                <span class="tag">Nike</span>
+            </div>
+            <p class="price">90$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="B6" data-name="Adidas Tiro 21 Training Pants" data-tags="Adidas" data-price="45"
+            data-image="https://assets.adidas.com/images/w_600,f_auto,q_auto/6d406e8dc31d4f419085ac380146225f_9366/Kalhoty_Tiro_21_Training_cerna_GQ1242_01_laydown.jpg" onclick="redirectToProductPage('productB6')">
+            <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/6d406e8dc31d4f419085ac380146225f_9366/Kalhoty_Tiro_21_Training_cerna_GQ1242_01_laydown.jpg" alt="Product 6">
+            <h3>Adidas Tiro 21 Training Pants</h3>
+            <p>Funktionelle Trainingshose mit feuchtigkeitsabsorbierender AEROREADY-Technologie und schmaler Passform.</p>
+            <div class="tags">
+                <span class="tag">Adidas</span>
+            </div>
+            <p class="price">45$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="B7" data-name="Puma Evostripe Pants" data-tags="Puma" data-price="65"
+            data-image="https://www.a3sport.cz/files/images/slike_proizvoda/media/675/675932-31/images/675932-31.jpg" onclick="redirectToProductPage('productB7')">
+            <img src="https://www.a3sport.cz/files/images/slike_proizvoda/media/675/675932-31/images/675932-31.jpg" alt="Product 7">
+            <h3>Puma Evostripe Pants</h3>
+            <p>Bequeme und flexible Trainingshose mit ergonomischem Schnitt und dryCELL-Technologie für trockenen Tragekomfort.</p>
+            <div class="tags">
+                <span class="tag">Puma</span>
+            </div>
+            <p class="price">65$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="B8" data-name="Nike Performance Cushion Crew Socks" data-tags="Nike" data-price="20"
+            data-image="https://static.nike.com/a/images/t_default/2afbfdc2-226a-4d68-a05c-001465d9ed18/everyday-plus-cushioned-training-crew-socks-zKFw2J.png" onclick="redirectToProductPage('productB8')">
+            <img src="https://static.nike.com/a/images/t_default/2afbfdc2-226a-4d68-a05c-001465d9ed18/everyday-plus-cushioned-training-crew-socks-zKFw2J.png" alt="Product 8">
+            <h3>Nike Performance Cushion Crew Socks</h3>
+            <p>Hochwertige Sportsocken mit strategischer Polsterung und Feuchtigkeitsmanagement für maximalen Komfort.</p>
+            <div class="tags">
+                <span class="tag">Nike</span>
+            </div>
+            <p class="price">20$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="B9" data-name="Adidas Cushioned Crew Socks" data-tags="Adidas" data-price="15"
+            data-image="https://static.ftshp.digital/img/p/9/6/7/8/4/0/967840-full_product.jpg" onclick="redirectToProductPage('productB9')">
+            <img src="https://static.ftshp.digital/img/p/9/6/7/8/4/0/967840-full_product.jpg" alt="Product 9">
+            <h3>Adidas Cushioned Crew Socks</h3>
+            <p>Weiche und strapazierfähige Socken mit zusätzlicher Dämpfung und Unterstützung im Fußgewölbe.</p>
+            <div class="tags">
+                <span class="tag">Adidas</span>
+            </div>
+            <p class="price">15$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="B10" data-name="Puma Quarter Crew Socks" data-tags="Puma" data-price="12"
+            data-image="https://www.softmoc.com/items/images/P114175-105_XX4.jpg" onclick="redirectToProductPage('productB10')">
+            <img src="https://www.softmoc.com/items/images/P114175-105_XX4.jpg" alt="Product 7">
+            <h3>Puma Quarter Crew Socks</h3>
+            <p>Bequeme und atmungsaktive Sportsocken mit halblanger Passform und versftärkter Ferse und Zehenbereich.</p>
+            <div class="tags">
+                <span class="tag">Puma</span>
+            </div>
+            <p class="price">12$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="B11" data-name="Nike Dri-FIT Legend T-Shirt" data-tags="Nike" data-price="30"
+            data-image="https://www.sportsdirect.com/images/imgzoom/56/56976403_xxl.jpg" onclick="redirectToProductPage('productB11')">
+            <img src="https://www.sportsdirect.com/images/imgzoom/56/56976403_xxl.jpg" alt="Product 8">
+            <h3>Nike Dri-FIT Legend T-Shirt</h3>
+            <p>Leichtes und atmungsaktives T-Shirt mit schweißableitender Dri-FIT-Technologie für trockenen Tragekomfort.</p>
+            <div class="tags">
+                <span class="tag">Nike</span>
+            </div>
+            <p class="price">30$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="B12" data-name="Adidas Own The Run Tee" data-tags="Adidas" data-price="35"
+            data-image="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/6762a332a8df4f4895aeaf2c0093904b_9366/Own_the_Run_Tee_Blue_IC7640_21_model.jpg" onclick="redirectToProductPage('productB12')">
+            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/6762a332a8df4f4895aeaf2c0093904b_9366/Own_the_Run_Tee_Blue_IC7640_21_model.jpg" alt="Product 12">
+            <h3>Adidas Own The Run Tee</h3>
+            <p>Funktionelles Laufshirt mit reflektierenden Details und feuchtigkeitsabsorbierendem AEROREADY-Material für optimale Sichtbarkeit und Komfort.</p>
+            <div class="tags">
+                <span class="tag">Adidas</span>
+            </div>
+            <p class="price">35$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+    </main>
+
+    <div id="noResultsMessage" class="nichts_gefunden">
+        Leider haben wir nichts gefunden
+    </div>
+
+    <script src="electronik.js"></script>
+</body>
+
+</html>

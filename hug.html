@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store - Haus und Garten</title>
+    <link rel="stylesheet" href="styles/category.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">ONLINE-SHOP</a>
+            <div class="search-container">
+                <button id="searchButton">
+                    <img src="https://w7.pngwing.com/pngs/603/893/png-transparent-peco-pallet-computer-icons-magnifying-glass-magnifying-glass-magnifier-%D1%81%D1%82%D0%B5%D0%BA%D0%BB%D0%BE-vektor.png" alt="Search">
+                </button>
+                <input type="text" id="searchInput" placeholder="Enter product name...">
+            </div>
+            <button id="showAllButton">Alle zeigen</button>
+            <a href="cart.html" id="cartButton">Warenkorb (<span id="cartCount">0</span>)</a>
+        </div>
+    </header>
+
+    <div class="category-container">
+        <button class="categoryButton" data-category="Kärcher">Kärcher</button>
+        <button class="categoryButton" data-category="Gardena">Gardena</button>
+        <button class="categoryButton" data-category="Weber">Weber</button>
+        <button class="categoryButton" data-category="Bosch">Bosch</button>
+    </div>
+
+    <main id="productCards">
+        <div class="productCard" data-id="1" data-name="Bosch Rasenmäher Rotak 32" data-tags="Bosch" data-price="119"
+            data-image="https://media.cdn.bauhaus/m/478944/12.jpg" onclick="redirectToProductPage('product1')">
+            <img src="https://media.cdn.bauhaus/m/478944/12.jpg" alt="Product 1">
+            <h3>Bosch Rasenmäher Rotak 32</h3>
+            <p>Leichter und kompakter Elektrorasenmäher.</p>
+            <div class="tags">
+                <span class="tag">Bosch</span>
+            </div>
+            <p class="price">119$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="2" data-name="Gardena Gartenschlauch Flex 13 mm (1/2) 30 m" data-tags="Gardena" data-price="45"
+            data-image="https://www.hellweg.de/media/4a/71/e5/1712754316/294803_Gardena_Flex_Schlauch_Premium_Super_12_x_12_13_mm_50_m_18099-20_04.jpg" onclick="redirectToProductPage('product2')">
+            <img src="https://www.hellweg.de/media/4a/71/e5/1712754316/294803_Gardena_Flex_Schlauch_Premium_Super_12_x_12_13_mm_50_m_18099-20_04.jpg" alt="Product 2">
+            <h3>Gardena Gartenschlauch Flex 13 mm (1/2) 30 m</h3>
+            <p>Flexibler und langlebiger Gartenschlauch.</p>
+            <div class="tags">
+                <span class="tag">Gardena</span>
+            </div>
+            <p class="price">45$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="3" data-name="Bosch Akku-Schrauber IXO V" data-tags="Bosch" data-price="49"
+            data-image="https://image.hagebau.de/pdp_zoomed/akku-schrauber-ixo-vino-36-v-inkl-akku--1000000000289232.jpg" onclick="redirectToProductPage('product3')">
+            <img src="https://image.hagebau.de/pdp_zoomed/akku-schrauber-ixo-vino-36-v-inkl-akku--1000000000289232.jpg" alt="Product 3">
+            <h3>Bosch Akku-Schrauber IXO V</h3>
+            <p>Kompakter Akku-Schrauber für den Haushalt.</p>
+            <div class="tags">
+                <span class="tag">Bosch</span>
+            </div>
+            <p class="price">49$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="4" data-name="Kärcher K4 Hochdruckreiniger" data-tags="Kärcher" data-price="199"
+            data-image="https://s1.kaercher-media.com/mam/13240330/mainproduct/168387/d0.jpg" onclick="redirectToProductPage('product4')">
+            <img src="https://s1.kaercher-media.com/mam/13240330/mainproduct/168387/d0.jpg" alt="Product 4">
+            <h3>Kärcher K4 Hochdruckreiniger</h3>
+            <p>Leistungsstarker Hochdruckreiniger für den Außenbereich.</p>
+            <div class="tags">
+                <span class="tag">Kärcher</span>
+            </div>
+            <p class="price">199$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="5" data-name="Weber Spirit II E-310 GBS Gasgrill" data-tags="Weber" data-price="499"
+            data-image="https://product-images.weber.com/Grill-Images/Gas/45010004B_RC_Rev1_1800x1800.png?w=800&h=800&auto=compress%2Cformat" onclick="redirectToProductPage('product5')">
+            <img src="https://product-images.weber.com/Grill-Images/Gas/45010004B_RC_Rev1_1800x1800.png?w=800&h=800&auto=compress%2Cformat" alt="Product 5">
+            <h3>Weber Spirit II E-310 GBS Gasgrill</h3>
+            <p>Hochwertiger Gasgrill für Gartenpartys.</p>
+            <div class="tags">
+                <span class="tag">Weber</span>
+            </div>
+            <p class="price">499$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="6" data-name="Gardena Comfort Gartenhandschuhe" data-tags="Gardena" data-price="12"
+            data-image="https://media.cdn.bauhaus/m/1192875/12.jpg" onclick="redirectToProductPage('product6')">
+            <img src="https://media.cdn.bauhaus/m/1192875/12.jpg" alt="Product 6">
+            <h3>Gardena Comfort Gartenhandschuhe</h3>
+            <p>Bequeme und schützende Gartenhandschuhe.</p>
+            <div class="tags">
+                <span class="tag">Gardena</span>
+            </div>
+            <p class="price">12$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+    </main>
+
+    <div id="noResultsMessage" class="nichts_gefunden">
+        Leider haben wir nichts gefunden
+    </div>
+
+    <script src="electronik.js"></script>
+</body>
+
+</html>

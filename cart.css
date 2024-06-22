@@ -1,0 +1,100 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5b0fd5;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    background-color: #0600b3;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header .logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Cart items container */
+#cartItems {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s;
+}
+
+.cart-item:hover {
+    transform: scale(1.05);
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.cart-item span {
+    flex: 1;
+    text-align: center;
+}
+
+/* Cart total */
+#cartTotal {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 20px;
+}
+
+/* Clear cart button */
+#clearCartButton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    color: #0600b3;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+#clearCartButton:hover {
+    background-color: #0600b3;
+    color: #fff;
+    transform: scale(1.05);
+}

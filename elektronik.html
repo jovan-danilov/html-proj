@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store - elektronik</title>
+    <link rel="stylesheet" href="styles/category.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">ONLINE-SHOP</a>
+            <div class="search-container">
+                <button id="searchButton">
+                    <img src="https://w7.pngwing.com/pngs/603/893/png-transparent-peco-pallet-computer-icons-magnifying-glass-magnifying-glass-magnifier-%D1%81%D1%82%D0%B5%D0%BA%D0%BB%D0%BE-vektor.png"
+                        alt="Search">
+                </button>
+                <input type="text" id="searchInput" placeholder="Enter product name...">
+            </div>
+            <button id="showAllButton">Alle zeigen</button>
+            <a href="cart.html" id="cartButton">Warenkorb (<span id="cartCount">0</span>)</a>
+        </div>
+    </header>
+
+    <div class="category-container">
+        <button class="categoryButton" data-category="Apple">Apple</button>
+        <button class="categoryButton" data-category="Samsung">Samsung</button>
+        <button class="categoryButton" data-category="Xiaomi">Xiaomi</button>
+        <button class="categoryButton" data-category="Google">Google</button>
+    </div>
+
+    <main id="productCards">
+        <div class="productCard" data-id="1" data-name="Iphone 15 pro max" data-tags="Apple" data-price="999"
+            data-image="https://i-ray.ru/upload/iblock/052/3cdtif5posw2m95wwb75gusck4p2iy2j.png"
+            onclick="redirectToProductPage('1')">
+            <img src="https://i-ray.ru/upload/iblock/052/3cdtif5posw2m95wwb75gusck4p2iy2j.png" alt="Product 1">
+            <h3>Iphone 15 pro max</h3>
+            <p>Premium-Smartphone mit fortschrittlicher Kamera und leistungsstarkem Chip.</p>
+            <div class="tags">
+                <span class="tag">Apple</span>
+            </div>
+            <p class="price">999$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="A2" data-name="Apple watch series 9" data-tags="Apple" data-price="399"
+            data-image="https://applegod.ru/wp-content/uploads/2022/09/s81.jpg" onclick="redirectToProductPage('A2')">
+            <img src="https://applegod.ru/wp-content/uploads/2022/09/s81.jpg" alt="Product 2">
+            <h3>Apple watch series 9</h3>
+            <p>Hochmoderne Smartwatch mit neuen Gesundheitsfunktionen und verbesserten Sensoren.</p>
+            <div class="tags">
+                <span class="tag">Apple</span>
+            </div>
+            <p class="price">399$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="A3" data-name="Ipad Air 4" data-tags="Apple" data-price="599"
+            data-image="https://im.cyberport.de/is/image/cyberport/220309112318400301900002F"
+            onclick="redirectToProductPage('A3')">
+            <img src="https://im.cyberport.de/is/image/cyberport/220309112318400301900002F" alt="Product 3">
+            <h3>Ipad Air 4</h3>
+            <p>Leichtes und leistungsstarkes Tablet mit großem Display und vielseitigen Einsatzmöglichkeiten.</p>
+            <div class="tags">
+                <span class="tag">Apple</span>
+            </div>
+            <p class="price">599$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="A4" data-name="Samsung Galaxy S24 Ultra" data-tags="Samsung" data-price="1199"
+            data-image="https://media2.nbb-cdn.de/images/products/originals/Samsung-S24-Ultra-Gray-Hero_9a3f.jpg?size=780"
+            onclick="redirectToProductPage('A4')">
+            <img src="https://media2.nbb-cdn.de/images/products/originals/Samsung-S24-Ultra-Gray-Hero_9a3f.jpg?size=780"
+                alt="Product 4">
+            <h3>Samsung Galaxy S24 Ultra</h3>
+            <p>Leistungsstarkes Smartphone mit beeindruckender Kamera und großem Display.</p>
+            <div class="tags">
+                <span class="tag">Samsung</span>
+            </div>
+            <p class="price">1199$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="A5" data-name="Samsung Galaxy Tab S9 Ultra" data-tags="Samsung"
+            data-price="1099"
+            data-image="https://www.worldshop.eu/medias/img/8940144754718_w1500_z_734647504/samsung-galaxy-tab-s9-ultra-wi-fi-tablet-512gb-beige.jpeg"
+            onclick="redirectToProductPage('A5')">
+            <img src="https://www.worldshop.eu/medias/img/8940144754718_w1500_z_734647504/samsung-galaxy-tab-s9-ultra-wi-fi-tablet-512gb-beige.jpeg"
+                alt="Product 5">
+            <h3>Samsung Galaxy Tab S9 Ultra</h3>
+            <p>DHochwertiges Tablet mit großem Bildschirm und erstklassiger Leistung.</p>
+            <div class="tags">
+                <span class="tag">Samsung</span>
+            </div>
+            <p class="price">1099$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="A6" data-name="Samsung Galaxy Watch s6" data-tags="Samsung" data-price="399"
+            data-image="https://m.media-amazon.com/images/I/51avPtskogL.jpg" onclick="redirectToProductPage('A6')">
+            <img src="https://m.media-amazon.com/images/I/51avPtskogL.jpg" alt="Product 6">
+            <h3>Samsung Galaxy Watch s6</h3>
+            <p>Elegante Smartwatch mit umfangreichen Fitness- und Gesundheitsfunktionen.</p>
+            <div class="tags">
+                <span class="tag">Samsung</span>
+            </div>
+            <p class="price">399$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="A7" data-name="Xiaomi 14" data-tags="Xiaomi" data-price="899"
+            data-image="https://i05.appmifile.com/276_item_de/22/02/2024/4205d5aa55e692e8816077cafa2bcb45!400x400!85.png"
+            onclick="redirectToProductPage('A7')">
+            <img src="https://i05.appmifile.com/276_item_de/22/02/2024/4205d5aa55e692e8816077cafa2bcb45!400x400!85.png"
+                alt="Product 7">
+            <h3>Xiaomi 14</h3>
+            <p>Innovatives Smartphone mit leistungsstarkem Prozessor und vielseitiger Kamera.</p>
+            <div class="tags">
+                <span class="tag">Xiaomi</span>
+            </div>
+            <p class="price">899$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="A8" data-name="Xiaomi Watch 4" data-tags="Xiaomi" data-price="199"
+            data-image="https://i02.appmifile.com/mi-com-product/fly-birds/redmi-watch-4/M/f508e53f9b3041fd5ebd318e7fa0fea8.png"
+            onclick="redirectToProductPage('A8')">
+            <img src="https://i02.appmifile.com/mi-com-product/fly-birds/redmi-watch-4/M/f508e53f9b3041fd5ebd318e7fa0fea8.png"
+                alt="Product 8">
+            <h3>Xiaomi Watch 4</h3>
+            <p>Stilvolle Smartwatch mit umfassenden Fitness-Tracking-Funktionen.</p>
+            <div class="tags">
+                <span class="tag">Xiaomi</span>
+            </div>
+            <p class="price">199$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="A9" data-name="Xiaomi Tab 6s pro" data-tags="Xiaomi" data-price="599"
+            data-image="https://tradingshenzhen.com/13483-large_default/xiaomi-pad6max-16gb1tb.jpg"
+            onclick="redirectToProductPage('A9')">
+            <img src="https://tradingshenzhen.com/13483-large_default/xiaomi-pad6max-16gb1tb.jpg" alt="Product 9">
+            <h3>Xiaomi Tab 6s pro</h3>
+            <p>Vielseitiges Tablet mit großem Display und starker Performance.</p>
+            <div class="tags">
+                <span class="tag">Xiaomi</span>
+            </div>
+            <p class="price">599$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="A10" data-name="Google Pixel 8 pro" data-tags="Google" data-price="999"
+            data-image="https://med.csmobiles.com/1060824-large_default/google-pixel-8-pro-5g-12gb-256gb-dual-sim-negro.jpg"
+            onclick="redirectToProductPage('A10')">
+            <img src="https://med.csmobiles.com/1060824-large_default/google-pixel-8-pro-5g-12gb-256gb-dual-sim-negro.jpg"
+                alt="Product 7">
+            <h3>Google Pixel 8 pro</h3>
+            <p>Spitzen-Smartphone mit herausragender Kamera und reinem Android-Erlebnis.</p>
+            <div class="tags">
+                <span class="tag">Google</span>
+            </div>
+            <p class="price">999$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="A11" data-name="Google Pixel Watch 2" data-tags="Google" data-price="349"
+            data-image="https://lh3.googleusercontent.com/iZNVALtZemoy12x6AIEcRlhUzazo9_M0uC8AozEQ8hZh4okcKkyEEP3l_tvsGAq_5cVEIS2wB6Qv3o8Mv1s3bb60nS5pAc_qw6I=rw"
+            onclick="redirectToProductPage('A11')">
+            <img src="https://lh3.googleusercontent.com/iZNVALtZemoy12x6AIEcRlhUzazo9_M0uC8AozEQ8hZh4okcKkyEEP3l_tvsGAq_5cVEIS2wB6Qv3o8Mv1s3bb60nS5pAc_qw6I=rw"
+                alt="Product 8">
+            <h3>Google Pixel Watch 2</h3>
+            <p>Innovative Smartwatch mit umfassenden Gesundheitsfunktionen und nahtloser Integration in das
+                Google-Ökosystem.</p>
+            <div class="tags">
+                <span class="tag">Google</span>
+            </div>
+            <p class="price">349$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+        <div class="productCard" data-id="A12" data-name="Google Pixel Tab" data-tags="Google" data-price="649"
+            data-image="https://lh3.googleusercontent.com/W_Hpaayi9BtTLTKakxE4aPKeSXBiIFiRlyfg9U1oZqTrj_mZCHE-Fz59zr11uyfro-g15olBvk5ZSBHr1Cz-a21cYCt8tpryv2S695s=rw-e365-w842-v1"
+            onclick="redirectToProductPage('A12')">
+            <img src="https://lh3.googleusercontent.com/W_Hpaayi9BtTLTKakxE4aPKeSXBiIFiRlyfg9U1oZqTrj_mZCHE-Fz59zr11uyfro-g15olBvk5ZSBHr1Cz-a21cYCt8tpryv2S695s=rw-e365-w842-v1"
+                alt="Product 9">
+            <h3>Google Pixel Tab</h3>
+            <p>Leistungsfähiges Tablet mit integriertem Google Assistant und hochwertigem Display.</p>
+            <div class="tags">
+                <span class="tag">Google</span>
+            </div>
+            <p class="price">649$</p>
+            <button class="addToCartButton">In Warenkorb hinzüfugen</button>
+        </div>
+    </main>
+
+    <div id="noResultsMessage" class="nichts_gefunden">
+        Leider haben wir nichts gefunden
+    </div>
+
+    <script src="electronik.js"></script>
+</body>
+
+</html>
